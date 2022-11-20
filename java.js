@@ -3,7 +3,7 @@ var http=require('http');
 
 
 
-http.createServer(function (req,res) {
+const Server=http.createServer(function (req,res) {
     if(req.url="/"){
         //asy
         fs.readFile('home.html',function (error,data) {
